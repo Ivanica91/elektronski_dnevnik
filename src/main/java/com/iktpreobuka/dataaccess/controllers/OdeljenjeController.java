@@ -1,5 +1,7 @@
 package com.iktpreobuka.dataaccess.controllers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,9 +18,11 @@ public class OdeljenjeController {
 	@Autowired
 	public OdeljenjeRepository odeljenjeRepository;
 	
+	private final Logger logger = LoggerFactory.getLogger(OdeljenjeController.class);
 
 	@RequestMapping(method = RequestMethod.POST)
 	public Odeljenje addOdeljenje (@RequestBody Odeljenje odeljenje) {
+		logger.info("Pokrenuta je metoda Odeljenje");
 		Odeljenje novoOdeljenje = new Odeljenje();
 		novoOdeljenje.setNaziv (odeljenje.getNaziv());
 		novoOdeljenje.setRazredEnum(odeljenje.getRazredEnum());

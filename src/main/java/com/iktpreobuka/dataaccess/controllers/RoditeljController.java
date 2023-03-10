@@ -1,5 +1,7 @@
 package com.iktpreobuka.dataaccess.controllers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,10 +19,12 @@ public class RoditeljController {
 	@Autowired
 	public RoditeljRepository roditeljRepository;
 	
+	private final Logger logger = LoggerFactory.getLogger(RoditeljController.class);
 	
 		
 	@RequestMapping(method = RequestMethod.POST)
 	public Roditelj addRoditelj (@RequestBody Roditelj noviRoditelj) {
+		logger.info("Pokrenuta je metoda Roditelj");
 		Roditelj roditelj = new Roditelj();
 		roditelj.setIme (noviRoditelj.getIme());
 		roditelj.setPrezime (noviRoditelj.getPrezime());

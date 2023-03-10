@@ -2,6 +2,8 @@ package com.iktpreobuka.dataaccess.controllers;
 
 import java.time.LocalDate;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,8 +24,11 @@ public class OcenaController {
 		@Autowired
 		private OcenaService ocenaService;
 		
+		private final Logger logger = LoggerFactory.getLogger(OcenaController.class);
+	
 		@RequestMapping(method = RequestMethod.POST)
 		public Ocena addOcena (@RequestBody Ocena ocena) {
+			logger.info("Pokrenuta je metoda Ocena");
 			Ocena novaOcena = new Ocena();
 			novaOcena.setOcena (ocena.getOcena());
 			novaOcena.setNazivOcene(ocena.getNazivOcene());

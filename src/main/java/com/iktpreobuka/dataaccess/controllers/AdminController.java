@@ -1,5 +1,7 @@
 package com.iktpreobuka.dataaccess.controllers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,8 +20,11 @@ public class AdminController {
 	@Autowired
 	public AdminRepository adminRepository;
 	
+	private final Logger logger = LoggerFactory.getLogger(AdminController.class);
+	
 	@RequestMapping(method = RequestMethod.POST)
 	public Admin addAdmin (@RequestBody Admin admin) {
+		logger.info("Pokrenuta je metoda Admin");
 		Admin noviAdmin = new Admin();
 		noviAdmin.setIme(admin.getIme());
 		noviAdmin.setPrezime(admin.getPrezime());

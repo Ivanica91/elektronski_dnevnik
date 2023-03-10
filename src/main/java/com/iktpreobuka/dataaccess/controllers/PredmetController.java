@@ -1,6 +1,8 @@
 package com.iktpreobuka.dataaccess.controllers;
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,10 +24,11 @@ public class PredmetController {
 	@Autowired
 	public PredmetService predmetService;
 	
-
+	private final Logger logger = LoggerFactory.getLogger(PredmetController.class);
 	
 	@RequestMapping(method= RequestMethod.POST)
 	public Predmet addPredmet(@RequestBody Predmet noviPredmet) {
+		logger.info("Pokrenuta je metoda Predmet");
 		Predmet predmet = new Predmet();
 		predmet.setNaziv(noviPredmet.getNaziv());
 		predmet.setNedeljniFond(noviPredmet.getNedeljniFond());
