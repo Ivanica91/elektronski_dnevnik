@@ -14,10 +14,6 @@ import com.iktpreobuka.dataaccess.services.RazredService;
 @RequestMapping("/razreed")
 public class RazredController {
 	
-//	@Autowired
-//	public RazredRepository razredrepository;
-//	@Autowired
-//	public RazredService razredService;
 	
 //	public Razred addRazred(@RequestMapping Razred razred);
 //	Razred noviRazred = new Razred();
