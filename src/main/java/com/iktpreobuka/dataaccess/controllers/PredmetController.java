@@ -4,6 +4,7 @@ package com.iktpreobuka.dataaccess.controllers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,7 @@ import com.iktpreobuka.dataaccess.services.PredmetService;
 
 @RestController
 @RequestMapping("/predmet")
+@CrossOrigin(origins = "http://localhost:3000")
 public class PredmetController {
 	
 	@Autowired
@@ -37,7 +39,7 @@ public class PredmetController {
 		 return predmet;
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, value="/lista predmeta")
+	@RequestMapping(method = RequestMethod.GET, value="/listapredmeta")
 	public Iterable<Predmet> getPredmet(){
 		return predmetRepository.findAll();
 	}

@@ -1,112 +1,27 @@
-2023-03-10 16:05:02.333  INFO 1860 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Starting ElektronskiDnevnikApplication using Java 17.0.4.1 on DESKTOP-L7V1H1L with PID 1860 (C:\Spring workspace IT obuka\elektronski_dnevnik\target\classes started by User in C:\Spring workspace IT obuka\elektronski_dnevnik)
-2023-03-10 16:05:02.338  INFO 1860 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : No active profile set, falling back to 1 default profile: "default"
-2023-03-10 16:05:02.568  INFO 1860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-10 16:05:02.569  INFO 1860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-10 16:05:05.130  INFO 1860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-10 16:05:05.413  INFO 1860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 244 ms. Found 10 JPA repository interfaces.
-2023-03-10 16:05:07.106  INFO 1860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-10 16:05:07.136  INFO 1860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-10 16:05:07.139  INFO 1860 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-03-10 16:05:07.375  INFO 1860 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-10 16:05:07.379  INFO 1860 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4808 ms
-2023-03-10 16:05:07.844  INFO 1860 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-10 16:05:08.016  INFO 1860 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-03-10 16:05:08.495  INFO 1860 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-10 16:05:08.920  INFO 1860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-10 16:05:09.856  INFO 1860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-10 16:05:09.963  INFO 1860 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-03-10 16:05:13.253  INFO 1860 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-10 16:05:13.285  INFO 1860 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-10 16:05:14.462  WARN 1860 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-10 16:05:15.478  WARN 1860 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2023-03-10 16:05:15.876  INFO 1860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-10 16:05:16.055  INFO 1860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-10 16:05:16.093  INFO 1860 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Started ElektronskiDnevnikApplication in 16.223 seconds (JVM running for 20.176)
-2023-03-10 16:06:28.437  INFO 1860 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-03-10 16:06:28.482  INFO 1860 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-10 16:06:28.507  INFO 1860 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-10 16:06:28.516  INFO 1860 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-10 16:06:28.567  INFO 1860 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-03-10 16:06:40.608  INFO 4372 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Starting ElektronskiDnevnikApplication using Java 17.0.4.1 on DESKTOP-L7V1H1L with PID 4372 (C:\Spring workspace IT obuka\elektronski_dnevnik\target\classes started by User in C:\Spring workspace IT obuka\elektronski_dnevnik)
-2023-03-10 16:06:40.612  INFO 4372 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : No active profile set, falling back to 1 default profile: "default"
-2023-03-10 16:06:40.868  INFO 4372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-10 16:06:40.869  INFO 4372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-10 16:06:43.093  INFO 4372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-10 16:06:43.391  INFO 4372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 233 ms. Found 10 JPA repository interfaces.
-2023-03-10 16:06:44.965  INFO 4372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-10 16:06:44.997  INFO 4372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-10 16:06:44.999  INFO 4372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-03-10 16:06:45.275  INFO 4372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-10 16:06:45.277  INFO 4372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4405 ms
-2023-03-10 16:06:45.687  INFO 4372 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-10 16:06:45.833  INFO 4372 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-03-10 16:06:46.322  INFO 4372 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-10 16:06:46.643  INFO 4372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-10 16:06:47.454  INFO 4372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-10 16:06:47.558  INFO 4372 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-03-10 16:06:50.777  INFO 4372 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-10 16:06:50.812  INFO 4372 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-10 16:06:52.003  WARN 4372 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-10 16:06:52.740  WARN 4372 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2023-03-10 16:06:53.079  INFO 4372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-10 16:06:53.228  INFO 4372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-10 16:06:53.264  INFO 4372 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Started ElektronskiDnevnikApplication in 13.707 seconds (JVM running for 16.362)
-2023-03-10 16:09:42.703  INFO 4372 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-03-10 16:09:42.732  INFO 4372 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-10 16:09:42.751  INFO 4372 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-10 16:09:42.757  INFO 4372 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-03-10 16:09:42.779  INFO 4372 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-03-10 16:09:42.954  INFO 4372 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Starting ElektronskiDnevnikApplication using Java 17.0.4.1 on DESKTOP-L7V1H1L with PID 4372 (C:\Spring workspace IT obuka\elektronski_dnevnik\target\classes started by User in C:\Spring workspace IT obuka\elektronski_dnevnik)
-2023-03-10 16:09:42.955  INFO 4372 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : No active profile set, falling back to 1 default profile: "default"
-2023-03-10 16:09:43.447  INFO 4372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-10 16:09:43.523  INFO 4372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 10 JPA repository interfaces.
-2023-03-10 16:09:43.734  INFO 4372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-10 16:09:43.735  INFO 4372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-10 16:09:43.736  INFO 4372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-03-10 16:09:43.778  INFO 4372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-10 16:09:43.779  INFO 4372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 819 ms
-2023-03-10 16:09:43.859  INFO 4372 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-10 16:09:43.874  INFO 4372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2023-03-10 16:09:43.907  INFO 4372 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2023-03-10 16:09:43.908  INFO 4372 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-03-10 16:09:44.661  INFO 4372 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-10 16:09:44.663  INFO 4372 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-10 16:09:45.087  WARN 4372 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-10 16:09:45.402  WARN 4372 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2023-03-10 16:09:45.491  INFO 4372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-10 16:09:45.523  INFO 4372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-10 16:09:45.531  INFO 4372 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Started ElektronskiDnevnikApplication in 2.648 seconds (JVM running for 188.629)
-2023-03-10 16:09:45.536  INFO 4372 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2023-03-10 16:10:08.273  INFO 4372 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-03-10 16:10:08.297  INFO 4372 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-03-10 16:10:08.307  INFO 4372 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-03-10 16:10:08.309  INFO 4372 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2023-03-10 16:10:08.319  INFO 4372 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2023-03-10 16:48:28.816  INFO 5452 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Starting ElektronskiDnevnikApplication using Java 17.0.4.1 on DESKTOP-L7V1H1L with PID 5452 (C:\Spring workspace IT obuka\elektronski_dnevnik\target\classes started by User in C:\Spring workspace IT obuka\elektronski_dnevnik)
-2023-03-10 16:48:28.821  INFO 5452 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : No active profile set, falling back to 1 default profile: "default"
-2023-03-10 16:48:28.968  INFO 5452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-10 16:48:28.969  INFO 5452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-10 16:48:30.415  INFO 5452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-10 16:48:30.616  INFO 5452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 10 JPA repository interfaces.
-2023-03-10 16:48:32.025  INFO 5452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-03-10 16:48:32.053  INFO 5452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-10 16:48:32.056  INFO 5452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-03-10 16:48:32.253  INFO 5452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-10 16:48:32.255  INFO 5452 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3285 ms
-2023-03-10 16:48:32.610  INFO 5452 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-10 16:48:32.745  INFO 5452 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-03-10 16:48:33.183  INFO 5452 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-03-10 16:48:33.436  INFO 5452 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-10 16:48:34.112  INFO 5452 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-10 16:48:34.199  INFO 5452 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2023-03-10 16:48:36.346  INFO 5452 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-10 16:48:36.369  INFO 5452 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-10 16:48:37.150  WARN 5452 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-10 16:48:37.718  WARN 5452 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2023-03-10 16:48:37.985  INFO 5452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2023-03-10 16:48:38.076  INFO 5452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-03-10 16:48:38.096  INFO 5452 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Started ElektronskiDnevnikApplication in 10.038 seconds (JVM running for 11.632)
-2023-03-10 16:55:35.932  INFO 5452 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-10 16:55:35.934  INFO 5452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-10 16:55:35.938  INFO 5452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2023-03-10 16:55:36.043  WARN 5452 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{nastavnikId}"]
+2023-05-13 17:42:07.013  INFO 6748 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Starting ElektronskiDnevnikApplication using Java 17.0.4.1 on DESKTOP-L7V1H1L with PID 6748 (C:\Spring workspace IT obuka\elektronski_dnevnik\target\classes started by User in C:\Spring workspace IT obuka\elektronski_dnevnik)
+2023-05-13 17:42:07.022  INFO 6748 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-13 17:42:07.152  INFO 6748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-13 17:42:07.153  INFO 6748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-13 17:42:08.595  INFO 6748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-13 17:42:08.746  INFO 6748 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 10 JPA repository interfaces.
+2023-05-13 17:42:09.528  INFO 6748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-13 17:42:09.543  INFO 6748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-13 17:42:09.544  INFO 6748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-13 17:42:09.657  INFO 6748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-13 17:42:09.658  INFO 6748 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2503 ms
+2023-05-13 17:42:09.845  INFO 6748 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-13 17:42:09.929  INFO 6748 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-05-13 17:42:10.173  INFO 6748 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-13 17:42:10.317  INFO 6748 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-13 17:42:10.898  INFO 6748 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-13 17:42:10.949  INFO 6748 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-13 17:42:12.597  INFO 6748 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-13 17:42:12.609  INFO 6748 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-13 17:42:13.319  WARN 6748 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-13 17:42:13.649  WARN 6748 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-05-13 17:42:13.805  INFO 6748 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-13 17:42:13.860  INFO 6748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-13 17:42:13.873  INFO 6748 --- [restartedMain] c.i.d.ElektronskiDnevnikApplication      : Started ElektronskiDnevnikApplication in 7.374 seconds (JVM running for 8.572)
+2023-05-13 17:50:27.562  INFO 6748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-13 17:50:27.563  INFO 6748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-13 17:50:27.565  INFO 6748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

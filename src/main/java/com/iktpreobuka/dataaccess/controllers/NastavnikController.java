@@ -44,7 +44,7 @@ public class NastavnikController {
 		return nastavnik;
 	}
 	
-	@RequestMapping(method = RequestMethod.GET,value="/lista nastavnika")
+	@RequestMapping(method = RequestMethod.GET,value="/listanastavnika")
 	public Iterable<Nastavnik> getNastavnik(){
 		return nastavnikRepository.findAll();
 		
